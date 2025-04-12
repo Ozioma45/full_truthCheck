@@ -50,7 +50,7 @@ const Signup: React.FC<SignupProps> = ({ onSignup }) => {
     try {
       const { email, password, confirmPassword } = formData;
 
-      const response = await fetch("http://localhost:3000/auth/register", {
+      const response = await fetch("https://full-truthcheckmaintest.onrender.com/auth/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

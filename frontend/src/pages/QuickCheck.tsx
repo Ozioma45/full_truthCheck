@@ -11,7 +11,7 @@ const QuickCheck = () => {
     if (!text.trim()) return;
 
     try {
-      const res = await fetch(`http://localhost:3000/api/fact-check?query=${encodeURIComponent(text)}`);
+      const res = await fetch(`https://full-truthcheckmaintest.onrender.com/api/fact-check?query=${encodeURIComponent(text)}`);
       const data = await res.json();
 
       // Save to localStorage
